@@ -4,7 +4,7 @@ A customized chrome addon I made to replace the boring old chrome homepage.
 
 ## Installation
 
-- [Download](https://www.github.com/) this repository.
+- [Download](https://github.com/aniketjs/firecandy/archive/refs/heads/main.zip) this repository.
 - Extract the zip file anywhere on your hard drive.
 - Open chrome then go to `Settings > Extensions`.
 - Turn on `Developer mode` in the top right corner.
