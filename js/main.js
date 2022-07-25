@@ -316,13 +316,15 @@ const dragAndDrop = () => {
 };
 
 const profile = () => {
-    const body = document.getElementById("body");
-    const button = document.getElementById("profile");
-    
-    button.addEventListener("click", (e) =>{
-        const main = document.createElement("div");
-        main.classList.add("popup-bg")
-        body.appendChild(main);
+    const modal = document.getElementById("modal");
+    const openBtn = document.getElementById("profileBtn");
+    const closeBtn = document.getElementById("profile-close");
+
+    openBtn.addEventListener("click", (e) => {
+        modal.style.display="flex";
+    });
+    closeBtn.addEventListener("click", (e) => {
+        modal.style.display = "none";
     });
 }
 
