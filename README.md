@@ -14,12 +14,12 @@ A customized chrome addon I made to replace the boring old chrome homepage.
 
 ## Feature roadmap
 
-- [] Tooltips for everything.
-- [] Notifications and reminders.
-- [] User arranged shorcuts.
-- [] User added shortcuts.
-- [] newsapi for random news.
-- [] Random quote (api).
-- [] Bio-data/resume page for copying stuff quickly.
-- [] Random soundcloud track (api).
-- [] Different styles, trinkets and audio for different holidays e.g. Halloween, Christmas
+- [ ] Tooltips for everything.
+- [ ] Notifications and reminders.
+- [ ] User arranged shorcuts.
+- [ ] User added shortcuts.
+- [ ] newsapi for random news.
+- [ ] Random quote (api).
+- [ ] Bio-data/resume page for copying stuff quickly.
+- [ ] Random soundcloud track (api).
+- [ ] Different styles, trinkets and audio for different holidays e.g. Halloween, Christmas.
