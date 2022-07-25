@@ -1,0 +1,17 @@
+{   
+    "manifest_version": 3,
+    "name": "Firecandy!",
+    "version": "0.1",
+
+    "description": "Revamp your homepage!",
+
+    "icons": {  "16": "./assets/favicon/firecandy48x48.png",
+                "48": "./assets/favicon/firecandy48x48.png",
+                "128": "./assets/favicon/firecandy48x48.png" },
+    
+    "incognito": "spanning",
+    "permissions": ["tabs"],
+    "chrome_url_overrides": {
+     "newtab": "index.html"
+    }
+}
