@@ -327,16 +327,19 @@ const profile = () => {
         modal.style.display = "none";
     });
 }
-
-    function menuItem(name, link) {
-        const createMenuItem = document.createElement("a");
-        createMenuItem.textContent = name;
-        createMenuItem.setAttribute('href',`${link}`);
-        createMenuItem.setAttribute('target', "_blank");
-
-        return(createMenuItem); // returning this is neccessary
-    }
-
+const book = () => {
+    const modal = document.getElementById("modal");
+}
+book();
+const birthdayReminder = () => {
+    const birthdays = [
+        {
+            name: "Aniket Chanda",
+            birthday: "11-01"
+        }
+    ]
+}
+birthdayReminder();
 
     
 // dragAndDrop();
