@@ -26,27 +26,47 @@
     <main id="main">
         <div class="modal-bg" id="modal">
             <div class="modal-cont">
-                <div class="profile-header-cont">
-                    <div class="profile-header">Profile</div>
-                    <div class="profile-control-cont">
-                        <div class="profile-close-btn" id="profile-close">
-                            <img src="./assets/svg/ui/close.svg" alt="">
+
+                <!-- PROFILE -->
+                <div id="profile-cont">
+                    <div class="popup-header-cont">
+                        <div class="popup-header">Profile</div>
+                        <div class="popup-control-cont">
+                            <div class="popup-close-btn" id="profileClose">
+                                <img src="./assets/svg/ui/close.svg" alt="">
+                            </div>
                         </div>
                     </div>
+                    <div class="popup-body">
+                        <fieldset>
+                            <input type="text" placeholder="First Name" value="Aniket">
+                            <input type="text" placeholder="Last Name" value="Chanda">
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" placeholder="Age" value="22">
+                            <input type="text" placeholder="Birthday" value="11-01-2000">
+                        </fieldset>
+                        <fieldset>
+                            <input type="text" placeholder="Email" value="aniketchandawork@gmail.com">
+                            <input type="text" placeholder="Phone" value="+916909040583">
+                        </fieldset>
+                    </div>
                 </div>
-                <fieldset>
-                    <input type="text" placeholder="First Name" value="Aniket">
-                    <input type="text" placeholder="Last Name" value="Chanda">
-                </fieldset>
-                <fieldset>
-                    <input type="text" placeholder="Age" value="22">
-                    <input type="text" placeholder="Birthday" value="11-01-2000">
-                </fieldset>
-                <fieldset>
-                    <input type="text" placeholder="Email" value="aniketchandawork@gmail.com">
-                    <input type="text" placeholder="Phone" value="+916909040583">
-                </fieldset>
                 
+                <!-- BOOKS -->
+                <div id="books-cont">
+                    <div class="popup-header-cont">
+                        <div class="popup-header">Books</div>
+                        <div class="popup-control-cont">
+                            <div class="popup-close-btn">
+                                <img id="booksClose" src="./assets/svg/ui/close.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        hello world
+                    </div>
+                </div>
             </div>
         </div>
         <!-- <header id="newsHeader">
@@ -98,10 +118,10 @@
                         <span id="hours"></span>
                         <span id="seconds"></span>
                     </a>
-                    <div id="booksBtn" class="profile">
+                    <div id="booksOpen" class="utility">
                         <img src="./assets/svg/ui/book.svg" alt="">
                     </div>
-                    <div id="profileBtn" class="profile">
+                    <div id="profileOpen" class="utility">
                         <img src="./assets/svg/ui/profile.svg" alt="">
                     </div>
                 </div>

@@ -195,7 +195,7 @@ const weather = () => {
             "/assets/svg/ui/partly_cloudy_day.svg",
             "/assets/svg/ui/partly_cloudy_night.svg",
             "/assets/svg/ui/clear_night.svg"
-        ]
+        ];
         console.log(obj);
         document.getElementById('temp').innerHTML = Math.round(obj.main.temp - 273.15) + "<sup>°</sup>" + "C";
         document.getElementById('weather').innerHTML = "&nbsp" + desc;
@@ -271,9 +271,6 @@ const rightClickMenu = () => {
     return(0);
 };
 
-
-
-
 const dragAndDrop = () => {
     const draggables = document.querySelectorAll('.shortcut');
     const containers = document.querySelectorAll('.shortcut-cont');
@@ -315,22 +312,33 @@ const dragAndDrop = () => {
     };
 };
 
-const profile = () => {
+const utility = () => {
     const modal = document.getElementById("modal");
-    const openBtn = document.getElementById("profileBtn");
-    const closeBtn = document.getElementById("profile-close");
+    const profile = document.getElementById("profile-cont");
+    const books = document.getElementById("books-cont");
 
-    openBtn.addEventListener("click", (e) => {
-        modal.style.display="flex";
-    });
-    closeBtn.addEventListener("click", (e) => {
-        modal.style.display = "none";
-    });
+
+    document.addEventListener("click", (e) => {
+        modal.style.display = "flex"
+        switch(true){
+            case(e.target.id === "profileOpen"):{
+                profile.style.display = "block";
+                break;
+            }
+            case(e.target.id === "bookOpen"):{
+                books.style.display = "block";
+                break;
+            }
+            case(e.target.id === "profileClose" || e.target.id === "booksClose"):{
+                profile.style.display = "none";
+                books.style.display = "none";
+                modal.style.display = "none";
+                break;
+            }
+        }
+    }, false);
 }
-const book = () => {
-    const modal = document.getElementById("modal");
-}
-book();
+
 const birthdayReminder = () => {
     const birthdays = [
         {
@@ -350,4 +358,4 @@ shortcutIcon();
 clock();
 weather();
 // rightClickMenu()
-profile();
+utility();

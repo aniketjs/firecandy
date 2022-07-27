@@ -373,7 +373,7 @@ body{
                         overflow: hidden;
                         color: var(--layer-2);
                     }
-                .profile{
+                .utility{
                     border-radius: .7em;
                     border: 2px solid var(--layer-4);
                     height: 4.2em; width: 4.2em;
@@ -628,23 +628,28 @@ body{
                                 .custom-menu-cont img{
                                     width: 1em; height: 1em;
                                 }
-
-.profile-header-cont{
+#profile-cont, #books-cont{
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.popup-header-cont{
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     /* background-color: red; */
     border-bottom: 1px solid var(--layer-3);
-    padding-bottom: .5em; margin-bottom: .5em;
+    padding-bottom: .8em; margin-bottom: .8em;
+    padding-left: .5em;
 }
-    .profile-header{
+    .popup-header{
         font-size: 24px;
     }
-    .profile-control-cont{
+    .popup-control-cont{
         margin-left: auto;
     }
-        .profile-close-btn{
+        .popup-close-btn{
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -656,12 +661,45 @@ body{
             width: 2em; height: 2em;
             transition: .1s ease-in-out;
         }
-        .profile-close-btn img{
+        .popup-close-btn img{
             width: 24px;
         }
-            .profile-close-btn:hover{
+            .popup-close-btn:hover{
                 background-color: var(--layer-2);
             }
+        .popup-body{
+            width: 100%;
+            height: 100%;
+        }
+        .popup-body fieldset{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            outline: none; border: none;
+            width: 100%;
+        }
+            .popup-body input{
+                background-color: var(--layer-5);
+                outline: none;
+                border: none;
+                padding: 1em; margin: .4em;
+                border-radius: .5em;
+                width: 100%;
+                transition: .1s ease-in-out;
+                border: 2px solid transparent;
+                cursor: grab;
+            }
+                .popup-body input:hover{
+                    border: 2px solid var(--layer-3);
+                    background-color: var(--layer-4);
+                }
+                .popup-body input:active{
+                    background-color: var(--bg-darker);
+                }
+
+
+
 .modal-bg{
     width: 100%; height: 100%;
     display: flex;
@@ -684,33 +722,6 @@ body{
         border-radius: 1em;
         width: 40%; height: 80%;
     }
-    .modal-cont fieldset{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        outline: none; border: none;
-        width: auto;
-        width: 100%;
-    }
-        .modal-cont input{
-            background-color: var(--layer-5);
-            outline: none;
-            border: none;
-            padding: 1em; margin: .4em;
-            border-radius: .5em;
-            width: 100%;
-            transition: .1s ease-in-out;
-            border: 2px solid transparent;
-            cursor: grab;
-        }
-            .modal-cont input:hover{
-                border: 2px solid var(--layer-3);
-                background-color: var(--layer-4);
-            }
-            .modal-cont input:active{
-                background-color: var(--bg-darker);
-            }
     @media only screen and (max-width: 1000px){
         .modal-cont{ width: 90%; }
         .chip-main{ width: 90%; }
@@ -719,7 +730,7 @@ body{
         #greet-icon{ margin-right: 0em; }
         #weather{ display: none; }
         .clock-widget{ margin-left: .15em; }
-        .profile{ margin-left: auto; }
+        .utility{ margin-left: auto; }
         .accent-cont { display: none; }
         .accent{ display: none; }
         .shortcut-cont{ justify-content: space-evenly; }
