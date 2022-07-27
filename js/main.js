@@ -358,4 +358,7 @@ shortcutIcon();
 clock();
 weather();
 // rightClickMenu()
-utility();
+
+
+//TODO: FIX THIS ASAP RETARD 🤫
+// utility();
