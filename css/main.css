@@ -83,6 +83,11 @@ html{
 img{
     width: 32px; height: 32px;
 }
+/* To hide the broken images */
+img[src=""],
+img:not([src]) {
+  visibility: hidden;
+}
 
 body{
     background-color: var(--bg-main);

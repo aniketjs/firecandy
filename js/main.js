@@ -114,8 +114,8 @@ const greetings = () => {
 
 // sets shortcut icons
 const shortcutIcon = () => {
-    
-    for(let i=0; i<10; i++){
+    const ICON_LEN = 10;
+    for(let i=0; i < ICON_LEN; i++){
         social[i].src = socialData[i].ico;
         socialLink[i].href = socialData[i].link;
 
@@ -154,7 +154,6 @@ const clock = () => {
     // if(hh > 12){
     //     session = "PM";
     // }
-
     hh = (hh < 10) ? "0" + hh : hh;
     mm = (mm < 10) ? "0" + mm : mm;
     ss = (ss < 10) ? "0" + ss : ss;
