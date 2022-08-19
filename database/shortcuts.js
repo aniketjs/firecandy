@@ -94,12 +94,12 @@ const musicData =   [
     {
         "name": "YouTube Music",
         "link": "https://music.youtube.com/",
-        "ico": "/assets/svg/shortcuts/YouTube_Music.svg"
+        "ico": "/assets/svg/shortcuts/youtube_music.svg"
     },
     {
         "name": "NightRideFM",
         "link": "https://nightride.fm/",
-        "ico": "/assets/svg/shortcuts/NightRideFm.svg"
+        "ico": "/assets/svg/shortcuts/nightridefm.svg"
     },
     {
         "name": "null",
@@ -151,7 +151,7 @@ const codeData =   [
     {
         "name": "JSFiddle",
         "link": "https://jsfiddle.net/",
-        "ico": "/assets/svg/shortcuts/JSFiddle.svg"
+        "ico": "/assets/svg/shortcuts/jsfiddle.svg"
     },
     {
         "name": "Codepen",
@@ -166,7 +166,7 @@ const codeData =   [
     {
         "name": "Leetcode",
         "link": "https://leetcode.com/",
-        "ico": "/assets/svg/shortcuts/LeetCode.svg"
+        "ico": "/assets/svg/shortcuts/leetcode.svg"
     }
 ]
 
@@ -261,7 +261,7 @@ const utilData =  [
     {
         "name": "Google Fonts",
         "link": "https://fonts.google.com/",
-        "ico": "/assets/svg/shortcuts/Google_fonts.svg"
+        "ico": "/assets/svg/shortcuts/google_fonts.svg"
     }, 
     {
         "name": "",
